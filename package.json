@@ -1,0 +1,36 @@
+{
+  "name": "mar-v3-ui",
+  "private": false,
+  "version": "0.0.6",
+  "main": "./dist/mar-v3-ui.umd.js",
+  "module": "./dist/mar-v3-ui.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/mar-v3-ui.es.js",
+      "require": "./dist/mar-v3-ui.umd.js"
+    }
+  },
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "feather-icons": "4",
+    "highlight.js": "^11.5.1",
+    "mar-v3-ui": "^0.0.7",
+    "sass": "^1.52.2",
+    "vite-plugin-md": "^0.14.0",
+    "vue": "3",
+    "vue-feather": "2",
+    "vue-router": "4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.3.3",
+    "typescript": "^5.0.2",
+    "vite": "^2.9.9"
+  }
+}
