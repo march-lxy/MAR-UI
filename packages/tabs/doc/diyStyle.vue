@@ -13,7 +13,7 @@
   </m-tabs>
 </template>
 
-<!-- js -->
+
 <script setup>
 import { ref } from "vue";
 // 默认选择第二个，值为pane的name

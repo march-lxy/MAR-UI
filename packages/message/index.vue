@@ -2,7 +2,7 @@
   <Transition name="slide-fade">
     <div :class="['m-message', customClass]" :style="style[type]" v-show="isShow">
       <template v-if="isText">
-        <m-icon :code="[style[type].icon]" size="1"></m-icon>
+        <m-icon :type="style[type].icon"></m-icon>
         <span class="text">{{ text }}</span>
       </template>
       <template v-else>
@@ -31,26 +31,26 @@ const props = defineProps({
 const state = reactive({
   style: {
     info: {
-      icon: props.icon || 'icon-caozuo1',
+      icon: props.icon || 'info',
       color: '#505050',
       backgroundColor: 'rgb(255 255 255)',
       borderColor: 'rgb(229 227 224)',
       boxShadow:' 0 2px 12px 0 rgba(7, 7, 7, 0.1)'
     },
     warn: {
-      icon: props.icon || 'icon-jinggao',
+      icon: props.icon || 'alert-triangle',
       color: '#f57b29',
       backgroundColor: 'rgb(243 233 220)',
       borderColor: 'rgb(243 233 220)'
     },
     error: {
-      icon: props.icon || 'icon-failed',
+      icon: props.icon || 'frown',
       color: '#ec3437',
       backgroundColor: 'rgb(251 228 228)',
       borderColor: 'rgb(251 228 228)'
     },
     success: {
-      icon: props.icon || 'icon-success',
+      icon: props.icon || 'smile',
       color: '#09b63d',
       backgroundColor: 'rgb(223 243 212)',
       borderColor: 'rgb(223 243 212)'

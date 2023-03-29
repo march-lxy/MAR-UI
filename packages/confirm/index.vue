@@ -3,7 +3,7 @@
     <div :class="['mar-confirm', customClass]" v-if="isShow">
       <div class="mar-wrapper">
         <div class="mar-header">
-          <m-icon :type="icon" size="1" class="icon-box"></m-icon>
+          <m-icon :type="icon" class="icon-box"></m-icon>
           <h3>{{ title }}</h3>
         </div>
         <div class="mar-body">

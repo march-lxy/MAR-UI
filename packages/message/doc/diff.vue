@@ -9,7 +9,7 @@
   </m-space>
 </template>
 
-<!-- js -->
+
 <script setup>
 import Message from "../index";
 const openInfo = () => {
@@ -40,7 +40,7 @@ const openCustom = () => {
   Message({
     type: "custom",
     text: "自定义消息弹窗样式",
-    icon: "icon-91jiazai",
+    icon: "calendar",
     textColor: "#000",
     bgColor: "#f40",
   });

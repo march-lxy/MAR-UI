@@ -2,7 +2,7 @@
   <m-button @click="openMsg">消息提示</m-button>
 </template>
 
-<!-- js -->
+
 <script setup>
 import Message from "../index"; //此处为本地示例，请使用import {mMessage} from "mar-v3-ui";引入
 import { getCurrentInstance } from "vue";

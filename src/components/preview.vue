@@ -15,8 +15,8 @@
         ><code class="language-html">{{ sourceCode }}</code></pre>
       </transition>
       <div class="showCode" @click="showOrhideCode">
+        <m-icon type="code" class="m-icon" />
         <span>{{ showCode ? "隐藏代码" : "显示代码" }}</span>
-        <m-icon code="icon-code" size="1" class="m-icon" />
       </div>
       <textarea id="inputCopy" />
     </div>
@@ -26,6 +26,7 @@
 <script setup>
 import { onMounted, ref, nextTick } from "vue";
 import Message from "../../packages/message/index";
+import { mIcon } from '../../packages/icon/index'
 const props = defineProps({
   compname: {
     type: String,
@@ -88,6 +89,7 @@ onMounted(() => {
 <style scoped lang="scss">
 .m-icon {
   width: 20px;
+  margin-right: 4px;
 }
 #inputCopy {
   opacity: 0;

@@ -24,7 +24,7 @@ const handleJToUse = () => {
 };
 
 const handleToGitHub = () => {
-  // window.location.href = "https://github.com/Down-1998/m-ui";
+  window.location.href = "https://github.com/march-lxy/MAR-UI";
 };
 const handleToNpm = () => {
   window.location.href = "https://www.npmjs.com/package/mar-v3-ui";

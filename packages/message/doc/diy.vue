@@ -6,19 +6,19 @@
   </m-space>
 </template>
 
-<!-- js -->
+
 <script setup>
 import Message from "../index"; //此处为本地示例，请使用import {mMessage} from "mar-v3-ui;引入
 const openMsg1 = () => {
   Message({
     text: "自定义Icon！",
-    icon: "icon-icon-test",
+    icon: "aperture",
   });
 };
 const openMsg2 = () => {
   Message({
     text: "5秒后消失！",
-    icon: "icon-check-item",
+    icon: "alert-circle",
     timeout: 5000,
   });
 };

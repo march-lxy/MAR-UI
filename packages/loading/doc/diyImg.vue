@@ -3,7 +3,7 @@
   <m-button @click="openLoading">自定义加载图片</m-button>
 </template>
 
-<!-- js -->
+
 <script setup>
   import Loading from "../index"; //此处为本地示例，请使用import { mLoading } from "mar-v3-ui";
   const openLoading = () => {

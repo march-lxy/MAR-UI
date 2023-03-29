@@ -4,7 +4,7 @@
   <m-button @click="openConfirm">确认消息</m-button>
 </template>
 
-<!-- js -->
+
 <script setup>
 import Confirm from "../index";
 import Message from "../../message/index";

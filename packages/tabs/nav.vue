@@ -8,7 +8,7 @@
       v-if="props.addable"
       @click="tabsContext.emits('onTabAdd')"
     >
-      <m-icon class="m-icon-add-bold add_icon" type="plus-circle" size="1.5"></m-icon>
+      <m-icon class="m-icon-add-bold add_icon" type="plus-circle"></m-icon>
     </div>
     <!-- <div class="tab-nav-next" v-if="scrollable" @click="scrollNext">
       <i class="m-icon-arrow-right-bold"></i>

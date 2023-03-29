@@ -3,7 +3,7 @@
   <m-button @click="openConfirm">确认消息</m-button>
 </template>
 
-<!-- js -->
+
 <script setup>
 import { getCurrentInstance } from "vue";
 import Confirm from "../index";
@@ -16,10 +16,10 @@ const openConfirm = () => {
       text: "您确认要删除这条数据吗？",
     })
     .then(() => {
-      Message({ text: "点击了确定",  icon: "icon-success", });
+      Message({ text: "点击了确定",  icon: "check-circle", });
     })
     .catch(() => {
-      Message({ text: "点击了取消",icon: "icon-jinggao", });
+      Message({ text: "点击了取消",icon: "info", });
     });
 };
 </script>
